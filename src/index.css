@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Cinzel", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  --color-void: #0a0b0f;
+  --color-abyss: #0f1117;
+  --color-deep: #161822;
+  --color-surface: #1c1f2e;
+  --color-elevated: #252840;
+  --color-border: #2a2d45;
+  --color-border-bright: #3a3d5c;
+  --color-muted: #6b7194;
+  --color-text: #c4c9e2;
+  --color-bright: #e8ecf8;
+  --color-cyan: #0ef0d3;
+  --color-cyan-dim: #0bbfa8;
+  --color-cyan-glow: rgba(14, 240, 211, 0.15);
+  --color-cyan-ghost: rgba(14, 240, 211, 0.05);
+  --color-gold: #d4a853;
+  --color-gold-dim: rgba(212, 168, 83, 0.15);
+}
+
+@layer base {
+  body {
+    @apply bg-void text-text antialiased;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) var(--color-abyss);
+  }
+
+  ::selection {
+    background: var(--color-cyan-glow);
+    color: var(--color-cyan);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-abyss);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 3px;
+  }
+}
+
+/* Prose overrides for dark wiki aesthetic */
+.prose-wiki {
+  --tw-prose-body: var(--color-text);
+  --tw-prose-headings: var(--color-bright);
+  --tw-prose-lead: var(--color-muted);
+  --tw-prose-links: var(--color-cyan);
+  --tw-prose-bold: var(--color-bright);
+  --tw-prose-counters: var(--color-muted);
+  --tw-prose-bullets: var(--color-cyan-dim);
+  --tw-prose-hr: var(--color-border);
+  --tw-prose-quotes: var(--color-text);
+  --tw-prose-quote-borders: var(--color-cyan-dim);
+  --tw-prose-captions: var(--color-muted);
+  --tw-prose-code: var(--color-cyan);
+  --tw-prose-pre-code: var(--color-text);
+  --tw-prose-pre-bg: var(--color-abyss);
+  --tw-prose-th-borders: var(--color-border);
+  --tw-prose-td-borders: var(--color-border);
+}
+
+.prose-wiki a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(14, 240, 211, 0.3);
+  transition: border-color 0.2s, color 0.2s;
+}
+.prose-wiki a:hover {
+  border-bottom-color: var(--color-cyan);
+}
+
+.prose-wiki h1,
+.prose-wiki h2,
+.prose-wiki h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.prose-wiki h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.prose-wiki blockquote {
+  border-left: 2px solid var(--color-cyan-dim);
+  background: var(--color-cyan-ghost);
+  padding: 0.75rem 1rem;
+  border-radius: 0 4px 4px 0;
+  font-style: normal;
+}
+
+.prose-wiki code:not(pre code) {
+  background: var(--color-deep);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.875em;
+}
+
+.prose-wiki pre {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.prose-wiki table {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.prose-wiki th {
+  background: var(--color-deep);
+}
+
+.prose-wiki img {
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+/* Glow effect for headings */
+.glow-text {
+  text-shadow: 0 0 40px rgba(14, 240, 211, 0.15);
+}
+
+/* Subtle animated border */
+@keyframes border-pulse {
+  0%, 100% { border-color: var(--color-border); }
+  50% { border-color: var(--color-border-bright); }
+}
