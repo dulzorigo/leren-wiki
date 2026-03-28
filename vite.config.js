@@ -15,6 +15,7 @@ function wikiPlugin() {
     for (const item of fs.readdirSync(dir, { withFileTypes: true })) {
       const rel = base ? `${base}/${item.name}` : item.name
       if (item.isDirectory()) {
+        if (item.name === 'templates' || item.name === '.obsidian') continue
         entries.push(...walkDir(resolve(dir, item.name), rel))
       } else if (item.name.endsWith('.md')) {
         const content = fs.readFileSync(resolve(dir, item.name), 'utf-8')

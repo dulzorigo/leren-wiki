@@ -1,11 +1,10 @@
 ---
-title: Internal notes
+title:
 description:
-tags:
-  - ramblings
+tags: []
 ---
 
-# These are just really quick thoughts
+# {{title}}
 
 A brief overview of this entry — what it is and why it matters in the world of Leren.
 
