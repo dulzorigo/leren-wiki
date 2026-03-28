@@ -4,7 +4,7 @@ import { renderMarkdown } from '../lib/markdown'
 
 export default function WikiPage({ entries }) {
   const location = useLocation()
-  const slug = location.pathname.replace('/wiki/', '')
+  const slug = decodeURIComponent(location.pathname.replace('/wiki/', ''))
   const [html, setHtml] = useState('')
 
   const entry = useMemo(
