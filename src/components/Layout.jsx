@@ -23,7 +23,7 @@ export default function Layout({ entries }) {
             </button>
             <Link to="/" className="flex items-center gap-2 group">
               <div className="w-7 h-7 border border-cyan flex items-center justify-center">
-                <span className="font-display text-cyan text-sm">L</span>
+                <span className="font-display text-cyan">L</span>
               </div>
               <span className="font-display text-bright text-lg tracking-wide hidden sm:inline">Leren</span>
             </Link>
@@ -32,7 +32,7 @@ export default function Layout({ entries }) {
           <nav className="flex items-center gap-1">
             <Link
               to="/"
-              className={`px-3 py-1.5 text-sm ${
+              className={`px-3 py-1.5 ${
                 location.pathname === '/' ? 'text-cyan bg-deep' : 'text-muted hover:text-text'
               }`}
             >
@@ -40,7 +40,7 @@ export default function Layout({ entries }) {
             </Link>
             <Link
               to="/map"
-              className={`px-3 py-1.5 text-sm ${
+              className={`px-3 py-1.5 ${
                 location.pathname === '/map' ? 'text-cyan bg-deep' : 'text-muted hover:text-text'
               }`}
             >
@@ -48,7 +48,7 @@ export default function Layout({ entries }) {
             </Link>
             <Link
               to="/search"
-              className={`px-3 py-1.5 text-sm ${
+              className={`px-3 py-1.5 ${
                 location.pathname === '/search' ? 'text-cyan bg-deep' : 'text-muted hover:text-text'
               }`}
             >

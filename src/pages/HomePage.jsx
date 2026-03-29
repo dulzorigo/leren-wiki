@@ -31,13 +31,13 @@ export default function HomePage({ entries }) {
         <div className="mt-8 flex justify-center gap-4">
           <Link
             to="/search"
-            className="px-5 py-2 text-sm border border-cyan text-cyan hover:bg-deep"
+            className="px-5 py-2 border border-cyan text-cyan hover:bg-deep"
           >
             Search the Archives
           </Link>
           <Link
             to="/map"
-            className="px-5 py-2 text-sm border border-border text-muted hover:border-border-bright hover:text-text"
+            className="px-5 py-2 border border-border text-muted hover:border-border-bright hover:text-text"
           >
             View the Map
           </Link>
@@ -61,7 +61,7 @@ export default function HomePage({ entries }) {
             <h2 className="font-display text-bright text-lg capitalize mb-1">
               {category}
             </h2>
-            <p className="text-muted text-sm mb-3">
+            <p className="text-muted mb-3">
               {categoryDescriptions[category] || `Entries about ${category}`}
             </p>
             <ul className="space-y-1">
@@ -69,7 +69,7 @@ export default function HomePage({ entries }) {
                 <li key={entry.slug}>
                   <Link
                     to={`/wiki/${entry.slug}`}
-                    className="text-sm text-text/70 hover:text-cyan flex items-center gap-1.5"
+                    className="text-text/70 hover:text-cyan flex items-center gap-1.5"
                   >
                     <span className="w-1 h-1 bg-cyan" />
                     {entry.title}
@@ -83,7 +83,7 @@ export default function HomePage({ entries }) {
 
       {/* Footer note */}
       <div className="text-center pb-16">
-        <p className="text-muted/60 text-xs">
+        <p className="text-muted/60">
           This archive grows with each discovery. Add entries to the vault and they shall appear here.
         </p>
       </div>
