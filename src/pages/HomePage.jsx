@@ -15,53 +15,18 @@ export default function HomePage({ entries }) {
   const categories = Object.keys(navTree)
 
   return (
-    <div className="max-w-3xl mx-auto">
-      {/* Hero */}
-      <div className="text-center py-16 lg:py-24">
-        <div className="w-20 h-20 border-2 border-cyan flex items-center justify-center mx-auto mb-8">
-          <span className="font-display text-cyan text-3xl glow-text">L</span>
-        </div>
-        <h1 className="font-display text-4xl lg:text-5xl text-bright tracking-wide glow-text mb-4">
-          The World of Leren
-        </h1>
-        <p className="text-muted text-lg max-w-xl mx-auto leading-relaxed">
-          A living compendium of nations, creatures, lore, and the technologies
-          that bind them. Every entry is a thread in the fabric of this world.
-        </p>
-        <div className="mt-8 flex justify-center gap-4">
-          <Link
-            to="/search"
-            className="px-5 py-2 border border-cyan text-cyan hover:bg-deep"
-          >
-            Search the Archives
-          </Link>
-          <Link
-            to="/map"
-            className="px-5 py-2 border border-border text-muted hover:border-border-bright hover:text-text"
-          >
-            View the Map
-          </Link>
-        </div>
-      </div>
-
-      {/* Divider */}
-      <div className="flex items-center gap-4 mb-12">
-        <div className="flex-1 h-px bg-border" />
-        <span className="text-xs text-muted uppercase tracking-widest">Index</span>
-        <div className="flex-1 h-px bg-border" />
-      </div>
-
+    <div className="max-w-2xl mx-auto">
       {/* Category grid */}
       <div className="grid gap-4 sm:grid-cols-2 mb-16">
         {categories.map((category) => (
           <div
             key={category}
-            className="group border border-border p-5 hover:border-border-bright"
+            className="group border-2 border-zinc-700 px-5 py-3 hover:border-zinc-600"
           >
-            <h2 className="font-display text-bright text-lg capitalize mb-1">
+            <h2 className="font-display text-text text-lg capitalize mb-1">
               {category}
             </h2>
-            <p className="text-muted mb-3">
+            <p className="text-text/70 mb-3">
               {categoryDescriptions[category] || `Entries about ${category}`}
             </p>
             <ul className="space-y-1">
@@ -69,9 +34,9 @@ export default function HomePage({ entries }) {
                 <li key={entry.slug}>
                   <Link
                     to={`/wiki/${entry.slug}`}
-                    className="text-text/70 hover:text-cyan flex items-center gap-1.5"
+                    className="text-text/70 hover:text-zinc-300 flex items-center gap-1.5"
                   >
-                    <span className="w-1 h-1 bg-cyan" />
+                    <span className="w-1 h-1 bg-zinc-300" />
                     {entry.title}
                   </Link>
                 </li>

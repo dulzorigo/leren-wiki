@@ -1,14 +1,16 @@
 ---
 title: Brakken
 description: A militaristic mountain nation east of the Thornwall
-tags: [nation, eastern, mountain]
+tags:
+  - Nation
+  - Eastern
+  - Mountain
 ---
 
 # Brakken
-
 Brakken is a fortified nation carved into the eastern face of the Thornwall Mountains. Where Leren values patience, Brakken prizes strength and decisive action. Their cities are built vertically — great towers and bridges spanning impossible chasms.
 
-## Geography
+### Geography
 
 Brakken occupies the rugged highlands beyond the Thornwall, a landscape of deep gorges, volcanic plateaus, and dense iron-pine forests. The nation's heart is the **Crucible Valley**, a geothermally active basin where the capital city of **Forgegate** rises in tiers of blackened steel and stone.
 

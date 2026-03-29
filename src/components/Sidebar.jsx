@@ -25,20 +25,52 @@ export default function Sidebar({ entries, open, onClose }) {
 
       <aside
         className={`
-          fixed top-14 left-0 bottom-0 w-64 bg-abyss border-r border-border z-40
+          fixed top-0 left-0 bottom-0 w-40 z-40
           transform
-          lg:static lg:translate-x-0 lg:z-auto
+          lg:sticky lg:top-0 lg:h-screen lg:translate-x-0 lg:z-auto
           ${open ? 'translate-x-0' : '-translate-x-full'}
           overflow-y-auto
         `}
       >
-        <nav className="p-4 space-y-6">
+        <nav className="pt-40 p-2 space-y-2">
+          {/* Navigation links */}
+          <div className="space-y-0 mb-4">
+            <Link
+              to="/"
+              onClick={onClose}
+              className={`block px-2 py-1 ${
+                location.pathname === '/' ? 'text-text bg-zinc-800 border-2 border-zinc-700' : 'text-text/70 hover:text-text hover:bg-zinc-800 border-2 border-transparent'
+              }`}
+            >
+              Home
+            </Link>
+            <Link
+              to="/map"
+              onClick={onClose}
+              className={`block px-2 py-1 ${
+                location.pathname === '/map' ? 'text-text bg-zinc-800 border-2 border-zinc-700' : 'text-text/70 hover:text-text hover:bg-zinc-800 border-2 border-transparent'
+              }`}
+            >
+              Map
+            </Link>
+            <Link
+              to="/search"
+              onClick={onClose}
+              className={`block px-2 py-1 ${
+                location.pathname === '/search' ? 'text-text bg-zinc-800 border-2 border-zinc-700' : 'text-text/70 hover:text-text hover:bg-zinc-800 border-2 border-transparent'
+              }`}
+            >
+              Search
+            </Link>
+          </div>
+
+          {/* Categories */}
           {sortedCategories.map((category) => (
             <div key={category}>
-              <div className="flex items-center gap-2 text-muted font-medium uppercase tracking-wider mb-2 px-2">
+              <div className="flex items-center gap-2 text-text/50 tracking-wider mt-3 mb-1 px-2 capitalize border-l-2 border-transparent">
                 <span>{category}</span>
               </div>
-              <ul className="space-y-0.5">
+              <ul className="space-y-0">
                 {navTree[category].map((entry) => {
                   const path = `/wiki/${entry.slug}`
                   const isActive = location.pathname === path
@@ -48,10 +80,10 @@ export default function Sidebar({ entries, open, onClose }) {
                         to={path}
                         onClick={onClose}
                         className={`
-                          block px-3 py-1.5
+                          block px-2 py-1
                           ${isActive
-                            ? 'text-cyan bg-deep border-l-2 border-cyan'
-                            : 'text-text/70 hover:text-text hover:bg-surface border-l-2 border-transparent'
+                            ? 'text-text bg-zinc-800 border-2 border-zinc-700'
+                            : 'text-text/70 hover:text-text hover:bg-zinc-800 border-2 border-transparent'
                           }
                         `}
                       >
