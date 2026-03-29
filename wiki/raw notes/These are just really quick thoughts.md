@@ -4,7 +4,6 @@ description:
 tags:
   - ramblings
 ---
-
 # These are just really quick thoughts
 A brief overview of this entry — what it is and why it matters in the world of Leren.
 

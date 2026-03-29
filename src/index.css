@@ -43,11 +43,14 @@
     border-radius: 0 !important;
   }
 
+  html {
+    font-size: 20px;
+  }
+
   body {
     @apply bg-void text-text antialiased;
     scrollbar-width: thin;
     scrollbar-color: var(--color-border) var(--color-abyss);
-    line-height: 1.2;
   }
 
   ::selection {
