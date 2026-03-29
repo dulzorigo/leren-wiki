@@ -16,8 +16,8 @@
 }
 
 @theme {
-  --font-sans: "Visitor", system-ui, -apple-system, sans-serif;
-  --font-display: "Visitor", "Cinzel", "Palatino Linotype", serif;
+  --font-sans: "Micro 5", system-ui, -apple-system, sans-serif;
+  --font-display: "Micro 5", "Cinzel", "Palatino Linotype", serif;
   --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
 
   --color-void: #0a0b0f;
@@ -44,7 +44,7 @@
   }
 
   body {
-    @apply bg-void text-text;
+    @apply bg-void text-text antialiased;
     scrollbar-width: thin;
     scrollbar-color: var(--color-border) var(--color-abyss);
     line-height: 1.2;
