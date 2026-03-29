@@ -36,21 +36,21 @@ export default function WikiPage({ entries }) {
   return (
     <article className="max-w-3xl">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-muted mb-3">
+      <div className="flex items-center gap-2 text-text/50 mb-8">
         <Link to="/" className="hover:text-text">Home</Link>
-        <span className="text-border">/</span>
+        <span className="text-text/50">/</span>
         <span className="capitalize">{category}</span>
-        <span className="text-border">/</span>
+        <span className="text-text/50">/</span>
         <span className="text-text">{entry.frontmatter?.title || slug.split('/').pop()}</span>
       </div>
 
       {/* Tags */}
       {tags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-3">
+        <div className="flex flex-wrap gap-2 mb-8">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="px-2 py-0.5 bg-zinc-800 text-text border-2 border-zinc-700 capitalize"
+              className="px-1 py-0 bg-zinc-800 text-text border-2 border-zinc-700 capitalize"
             >
               {tag}
             </span>

@@ -1,12 +1,12 @@
 ---
-title: Commander Sael Drenn
+title: Leen
 description: First Forge of Brakken, leader of the Iron Compact
-tags: [character, brakken, leader, military]
+tags:
+  - character
 ---
+# Leen
 
-# Commander Sael Drenn
-
-Sael Drenn is the current **First Forge** of [Brakken](/wiki/nations/brakken), the highest rank in the Iron Compact. She has held the position for eleven years — the longest tenure in modern Brakken history — through a combination of strategic brilliance, political acumen, and an unmatched talent for echo-steel forging.
+Sael Drenn is the current **First Forge** of [brakken](brakken.md), the highest rank in the Iron Compact. She has held the position for eleven years — the longest tenure in modern Brakken history — through a combination of strategic brilliance, political acumen, and an unmatched talent for echo-steel forging.
 
 ## Early Life
 
