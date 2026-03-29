@@ -18,7 +18,7 @@ export default function HomePage({ entries }) {
     <div className="max-w-3xl mx-auto">
       {/* Hero */}
       <div className="text-center py-16 lg:py-24">
-        <div className="w-20 h-20 rounded-full border border-cyan/30 flex items-center justify-center mx-auto mb-8">
+        <div className="w-20 h-20 border-2 border-cyan flex items-center justify-center mx-auto mb-8">
           <span className="font-display text-cyan text-3xl glow-text">L</span>
         </div>
         <h1 className="font-display text-4xl lg:text-5xl text-bright tracking-wide glow-text mb-4">
@@ -31,13 +31,13 @@ export default function HomePage({ entries }) {
         <div className="mt-8 flex justify-center gap-4">
           <Link
             to="/search"
-            className="px-5 py-2 text-sm border border-cyan/30 text-cyan rounded hover:bg-cyan-ghost transition-colors"
+            className="px-5 py-2 text-sm border border-cyan text-cyan hover:bg-deep"
           >
             Search the Archives
           </Link>
           <Link
             to="/map"
-            className="px-5 py-2 text-sm border border-border text-muted rounded hover:border-border-bright hover:text-text transition-colors"
+            className="px-5 py-2 text-sm border border-border text-muted hover:border-border-bright hover:text-text"
           >
             View the Map
           </Link>
@@ -56,7 +56,7 @@ export default function HomePage({ entries }) {
         {categories.map((category) => (
           <div
             key={category}
-            className="group border border-border rounded-lg p-5 hover:border-border-bright transition-colors"
+            className="group border border-border p-5 hover:border-border-bright"
           >
             <h2 className="font-display text-bright text-lg capitalize mb-1">
               {category}
@@ -69,9 +69,9 @@ export default function HomePage({ entries }) {
                 <li key={entry.slug}>
                   <Link
                     to={`/wiki/${entry.slug}`}
-                    className="text-sm text-text/70 hover:text-cyan transition-colors flex items-center gap-1.5"
+                    className="text-sm text-text/70 hover:text-cyan flex items-center gap-1.5"
                   >
-                    <span className="w-1 h-1 rounded-full bg-cyan/40" />
+                    <span className="w-1 h-1 bg-cyan" />
                     {entry.title}
                   </Link>
                 </li>

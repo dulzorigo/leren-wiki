@@ -52,7 +52,7 @@ export default function SearchPage({ entries }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search entries, tags, content..."
-          className="w-full bg-surface border border-border rounded-lg pl-10 pr-4 py-2.5 text-text placeholder-muted/50 focus:outline-none focus:border-cyan/40 focus:ring-1 focus:ring-cyan/20 transition-colors"
+          className="w-full bg-surface border border-border pl-10 pr-4 py-2.5 text-text placeholder-muted/50 focus:outline-none focus:border-cyan"
           autoFocus
         />
       </div>
@@ -66,7 +66,7 @@ export default function SearchPage({ entries }) {
               <button
                 key={tag}
                 onClick={() => setQuery(tag)}
-                className="px-2.5 py-1 text-xs rounded-full bg-cyan-ghost text-cyan-dim border border-cyan/10 hover:border-cyan/30 transition-colors"
+                className="px-2.5 py-1 text-xs bg-deep text-cyan-dim border border-border hover:border-cyan"
               >
                 {tag}
               </button>
@@ -86,11 +86,11 @@ export default function SearchPage({ entries }) {
               <Link
                 key={item.slug}
                 to={`/wiki/${item.slug}`}
-                className="block border border-border rounded-lg p-4 hover:border-border-bright transition-colors group"
+                className="block border border-border p-4 hover:border-border-bright group"
               >
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <h3 className="text-bright group-hover:text-cyan transition-colors font-medium">
+                    <h3 className="text-bright group-hover:text-cyan font-medium">
                       {item.frontmatter?.title || item.slug.split('/').pop()}
                     </h3>
                     <p className="text-xs text-muted capitalize mt-0.5">
@@ -107,7 +107,7 @@ export default function SearchPage({ entries }) {
                       {item.frontmatter.tags.slice(0, 3).map((tag) => (
                         <span
                           key={tag}
-                          className="px-1.5 py-0.5 text-[10px] rounded bg-cyan-ghost text-cyan-dim"
+                          className="px-1.5 py-0.5 text-[10px] bg-deep text-cyan-dim border border-border"
                         >
                           {tag}
                         </span>

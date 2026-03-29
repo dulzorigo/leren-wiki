@@ -9,12 +9,12 @@ export default function Layout({ entries }) {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Top bar */}
-      <header className="sticky top-0 z-50 bg-abyss/80 backdrop-blur-md border-b border-border">
+      <header className="sticky top-0 z-50 bg-abyss border-b border-border">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 h-14">
           <div className="flex items-center gap-4">
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
-              className="lg:hidden text-muted hover:text-cyan transition-colors"
+              className="lg:hidden text-muted hover:text-cyan"
               aria-label="Toggle navigation"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -22,7 +22,7 @@ export default function Layout({ entries }) {
               </svg>
             </button>
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-7 h-7 rounded-full border border-cyan/40 flex items-center justify-center group-hover:border-cyan transition-colors">
+              <div className="w-7 h-7 border border-cyan flex items-center justify-center">
                 <span className="font-display text-cyan text-sm">L</span>
               </div>
               <span className="font-display text-bright text-lg tracking-wide hidden sm:inline">Leren</span>
@@ -32,24 +32,24 @@ export default function Layout({ entries }) {
           <nav className="flex items-center gap-1">
             <Link
               to="/"
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                location.pathname === '/' ? 'text-cyan bg-cyan-ghost' : 'text-muted hover:text-text'
+              className={`px-3 py-1.5 text-sm ${
+                location.pathname === '/' ? 'text-cyan bg-deep' : 'text-muted hover:text-text'
               }`}
             >
               Home
             </Link>
             <Link
               to="/map"
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                location.pathname === '/map' ? 'text-cyan bg-cyan-ghost' : 'text-muted hover:text-text'
+              className={`px-3 py-1.5 text-sm ${
+                location.pathname === '/map' ? 'text-cyan bg-deep' : 'text-muted hover:text-text'
               }`}
             >
               Map
             </Link>
             <Link
               to="/search"
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                location.pathname === '/search' ? 'text-cyan bg-cyan-ghost' : 'text-muted hover:text-text'
+              className={`px-3 py-1.5 text-sm ${
+                location.pathname === '/search' ? 'text-cyan bg-deep' : 'text-muted hover:text-text'
               }`}
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -23,7 +23,7 @@ export default function WikiPage({ entries }) {
       <div className="text-center py-20">
         <h1 className="font-display text-2xl text-bright mb-4">Page Not Found</h1>
         <p className="text-muted mb-6">The entry "{slug}" does not exist in the archives.</p>
-        <Link to="/" className="text-cyan hover:text-cyan-dim transition-colors">
+        <Link to="/" className="text-cyan hover:text-cyan-dim">
           Return to the index
         </Link>
       </div>
@@ -37,7 +37,7 @@ export default function WikiPage({ entries }) {
     <article className="max-w-3xl">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-sm text-muted mb-6">
-        <Link to="/" className="hover:text-text transition-colors">Home</Link>
+        <Link to="/" className="hover:text-text">Home</Link>
         <span className="text-border">/</span>
         <span className="capitalize">{category}</span>
         <span className="text-border">/</span>
@@ -50,7 +50,7 @@ export default function WikiPage({ entries }) {
           {tags.map((tag) => (
             <span
               key={tag}
-              className="px-2 py-0.5 text-xs rounded-full bg-cyan-ghost text-cyan-dim border border-cyan/10"
+              className="px-2 py-0.5 text-xs bg-deep text-cyan-dim border border-border"
             >
               {tag}
             </span>

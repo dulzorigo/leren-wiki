@@ -55,7 +55,7 @@ export default function Sidebar({ entries, open, onClose }) {
       <aside
         className={`
           fixed top-14 left-0 bottom-0 w-64 bg-abyss border-r border-border z-40
-          transform transition-transform duration-200
+          transform
           lg:static lg:translate-x-0 lg:z-auto
           ${open ? 'translate-x-0' : '-translate-x-full'}
           overflow-y-auto
@@ -78,9 +78,9 @@ export default function Sidebar({ entries, open, onClose }) {
                         to={path}
                         onClick={onClose}
                         className={`
-                          block px-3 py-1.5 text-sm rounded transition-all duration-150
+                          block px-3 py-1.5 text-sm
                           ${isActive
-                            ? 'text-cyan bg-cyan-ghost border-l-2 border-cyan'
+                            ? 'text-cyan bg-deep border-l-2 border-cyan'
                             : 'text-text/70 hover:text-text hover:bg-surface border-l-2 border-transparent'
                           }
                         `}

@@ -7,7 +7,7 @@ export default function MapPage() {
       </p>
 
       {/* Placeholder map area */}
-      <div className="aspect-[16/10] border border-border border-dashed rounded-lg flex items-center justify-center bg-surface/30">
+      <div className="aspect-[16/10] border border-border border-dashed flex items-center justify-center bg-surface/30">
         <div className="text-center">
           <svg
             className="w-16 h-16 mx-auto text-border mb-4"
@@ -24,7 +24,7 @@ export default function MapPage() {
           </svg>
           <p className="text-muted/60 text-sm">
             Place your world map image at<br />
-            <code className="text-xs text-cyan/60 bg-deep px-2 py-0.5 rounded mt-1 inline-block">
+            <code className="text-xs text-cyan bg-deep px-2 py-0.5 mt-1 inline-block">
               public/map.png
             </code>
           </p>
