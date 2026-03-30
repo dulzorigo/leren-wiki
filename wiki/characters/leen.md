@@ -8,18 +8,12 @@ tags:
 
 Sael Drenn is the current **First Forge** of [brakken](brakken.md), the highest rank in the Iron Compact. She has held the position for eleven years — the longest tenure in modern Brakken history — through a combination of strategic brilliance, political acumen, and an unmatched talent for echo-steel forging.
 
-## Early Life
+Actually scratch what i just wrote, I think Leen or whatever you name the nation or world the, time setting should be in the modern world. I don't think it should be in the olden days. Why does everything fantasy have to be in the medieval times.
 
-Born in the lower tiers of Forgegate to a family of common metalworkers, Drenn distinguished herself early through her Thornwalk — she returned not only unscathed but carrying a fully intact [Thornback](/wiki/creatures/thornback) plate, a feat considered nearly impossible. She entered the War Academy at sixteen and graduated first in her cohort.
+Because it would be actually really cool if people living in the modern or slightly futuristic world had powers. They would be technologically advanced and developed but also have powers. I would say they only need slight powers, nothing too OP. But maybe if we do make it pretty OP, some of the powers, it might be cool. But need to think about this a little. 
 
-## Rise to Power
+Another reason i'm really thinking about this direction for the world is that I wanna include hiphop, drumnbass and techno into the community of the main character. That would be so cool. To have the underground feel to the story, that would really interesting.
 
-Drenn's ascent through the Iron Compact was marked by a series of bold reforms. As a district forge-master, she introduced new alloy techniques that dramatically improved Brakken's echo-steel production. Her election to First Forge came after she brokered the current trade agreement with [Leren](/wiki/nations/leren), proving that strength and diplomacy need not be mutually exclusive.
+Think about it, slightly future world, people have some level of powers, they also have technology, which can enhance their powers or supress some of them. There would be some people that super strong maybe? Nah, think that's too boring. 
 
-## Philosophy
-
-Drenn is known for the maxim: *"The strongest steel is tempered, not merely heated."* She believes Brakken's future lies in controlled modernisation rather than isolation, a position that has earned her both fierce loyalty and dangerous enemies within the Compact.
-
-## Current Challenges
-
-Drenn faces growing pressure from traditionalist factions who oppose deeper ties with Leren, particularly regarding access to [Luminthread](/wiki/technology/luminthread) technology. Rumours of unrest in the outer forges suggest her position, while strong, is not unassailable.
+Man I was thinking about the Brakken and the world I was dreaming of but now its evolving or turning into a slightly scifi, underground, edgy slightly super powered world. I guess I go with the flow for now.
