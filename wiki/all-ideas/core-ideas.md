@@ -3,7 +3,7 @@ title: Core ideas
 description: Some core ideas of everything
 tags:
 ---
-# Leen
+# Core ideas
 
 ~~Sael Drenn is the current **First Forge** of [brakken](brakken.md), the highest rank in the Iron Compact. She has held the position for eleven years — the longest tenure in modern Brakken history — through a combination of strategic brilliance, political acumen, and an unmatched talent for echo-steel forging.~~
 
@@ -19,4 +19,4 @@ Man I was thinking about the Brakken and the world I was dreaming of but now its
 
 I think this is really delicate line to walk i don't want it to be too similar to cyberpunk2077. So gotta be careful of when events should take place. Not sure I wanna make it too in the future too. Really stuck on this. Maybe a little more in the future than cyberpunk and not super futuristic like dune or starwars. 
 
-Yeah its an interesting dillema. But it would be super cool if it was based in the future of like 3000, in 800 years time. That would kinda cool, that means we can show things from now which in their years is 800 years ago, which we can include fun little easter eggs and references. That would be cool, [[year 3000]] it is then.
+Yeah its an interesting dillema. But it would be super cool if it was based in the future of like 3000, in 800 years time. That would kinda cool, that means we can show things from now which in their years is 800 years ago, which we can include fun little easter eggs and references. That would be cool, [[year-3000]] it is then.
